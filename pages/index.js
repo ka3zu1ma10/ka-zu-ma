@@ -38,8 +38,8 @@ export default function Home() {
             <p className={styles.sectionText}>
               業務の問題点をヒアリングで探り<br aria-hidden="true" />
               チームの状態と、メンバーのモチベーションを<br aria-hidden="true" />
-              より良い状態にするために必要なことを<br aria-hidden="true" />
-              整理し、先導しながら進めていきます
+              より良い状態にするために<br aria-hidden="true" />
+              必要なことを整理し、先導しながら進めていきます
             </p>
           </div>
         </section>
