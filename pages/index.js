@@ -53,15 +53,15 @@ export default function Home() {
               </tr>
               <tr>
                 <th>2017</th>
-                <td><a href="https://cybozu.co.jp/" target="_blank">サイボウズ株式会社</a>にUX/UIデザイナーとして入社</td>
+                <td><a href="https://cybozu.co.jp/" target="_blank" rel="noreferrer">サイボウズ株式会社</a>にUX/UIデザイナーとして入社</td>
               </tr>
               <tr>
                 <th>2020~2021</th>
-                <td><a href="https://office.cybozu.co.jp/" target="_blank">サイボウズ Office</a>をデザインするチームでプロダクトデザイナーとして活動</td>
+                <td><a href="https://office.cybozu.co.jp/" target="_blank" rel="noreferrer">サイボウズ Office</a>をデザインするチームでプロダクトデザイナーとして活動</td>
               </tr>
               <tr>
                 <th>2022{date()}</th>
-                <td><a href="https://kintone.cybozu.co.jp/" target="_blank">kintone</a>をデザインするチームでデザインプログラムマネージャーとして活動 </td>
+                <td><a href="https://kintone.cybozu.co.jp/" target="_blank" rel="noreferrer">kintone</a>をデザインするチームでデザインプログラムマネージャーとして活動 </td>
               </tr>
             </tbody>
           </table>
@@ -70,7 +70,7 @@ export default function Home() {
           <h3 className={styles.sectionTitle}>発信</h3>
           <ul className={[styles.sectionBody,styles.snsList].join(" ")}>
             <li>
-              <a href="https://twitter.com/ka3zu1ma10" target="_blank" className={styles.snsLink}>
+              <a href="https://twitter.com/ka3zu1ma10" target="_blank" rel="noreferrer" className={styles.snsLink}>
                 <img src="/twitter.svg" alt="" />
                 <p className={styles.sectionText}>
                   Twitter<br aria-hidden="true" />
@@ -79,7 +79,7 @@ export default function Home() {
                 </a>
             </li>
             <li>
-              <a href="https://note.com/cy_kazuma" target="_blank" className={styles.snsLink}>
+              <a href="https://note.com/cy_kazuma" target="_blank" rel="noreferrer" className={styles.snsLink}>
                 <img src="/note.svg" alt="" />
                 <p className={styles.sectionText}>
                   Note<br aria-hidden="true" />
@@ -100,7 +100,7 @@ export default function Home() {
       <footer className={styles.footer}>
       </footer>
       <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
       <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&display=swap" rel="stylesheet" />
     </div>
   )
