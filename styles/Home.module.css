@@ -69,6 +69,10 @@
 }
 .snsLink {
   text-align: left;
+  text-decoration: none;
+}
+.snsLink:focus,.snsLink:hover,.snsLink:active {
+  text-decoration: underline;
 }
 
 
