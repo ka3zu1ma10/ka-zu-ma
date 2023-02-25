@@ -11,7 +11,7 @@ const date = function() {
 
 const meta = {
   title:"KazuMax Site",
-  description:"kazuMax(Kazuma Saito)の紹介サイトです。",
+  description:"Kazuma Saitoの紹介サイトです。",
   type:"website",
   url:"https://ka-zu-ma.com/",
   image:"",
@@ -36,91 +36,43 @@ export default function Home() {
         <meta property="og:locale" content="ja_JP"  />
       </Head>
       <header className={styles.header}>
-        <h1>KazuMax</h1>
+        <h1>KazuMax<img src="/mark.svg" alt="" role={'presentation'} className={styles.icon} /></h1>
       </header>
       <main className={styles.main}>
-        <section className={styles.section}>
-          <h2 className={styles.hero}>笑えるチームを<br aria-hidden="true" />デザインする</h2>
-        </section>
-        <section className={styles.section}>
-          <h2 className={styles.nickName}>KazuMax</h2>
-          <p className={styles.name}>Kazuma Saito</p>
-        </section>
-        <section className={styles.section}>
-          <h3 className={styles.sectionTitle}>私にできること</h3> 
-          <div className={styles.sectionBody}>
-            <p className={styles.sectionText}>
-              チームで仕事をするメンバーが<br aria-hidden="true" />
-              楽しくデザイン業務に集中できる<br aria-hidden="true" />
-              そんな環境を提供するために活動します
-            </p>
-            <p className={styles.sectionText}>
-              業務の問題点をヒアリングで探り<br aria-hidden="true" />
-              チームの状態と、メンバーのモチベーションを<br aria-hidden="true" />
-              より良い状態にするために<br aria-hidden="true" />
-              必要なことを整理し、先導しながら進めていきます
-            </p>
+        <div>
+          <img src="/mark.svg" alt="" role={'presentation'} className={styles.mark} />
+          <div className={styles.name}>
+            <h2 className={styles.nickname}>KazuMax</h2>
+            <p className={styles.fullname}>Kazuma Saito</p>
           </div>
-        </section>
-        <section className={styles.section}>
-          <h3 className={styles.sectionTitle}>経歴</h3> 
-          <table className={styles.sectionTable}>
-            <tbody>
-              <tr>
-                <th>1994</th>
-                <td>奈良県で生まれる</td>
-              </tr>
-              <tr>
-                <th>2017</th>
-                <td><a href="https://cybozu.co.jp/" target="_blank" rel="noreferrer">サイボウズ株式会社</a>にUX/UIデザイナーとして入社</td>
-              </tr>
-              <tr>
-                <th>2020~2021</th>
-                <td><a href="https://office.cybozu.co.jp/" target="_blank" rel="noreferrer">サイボウズ Office</a>をデザインするチームでプロダクトデザイナーとして活動</td>
-              </tr>
-              <tr>
-                <th>2022{date()}</th>
-                <td><a href="https://kintone.cybozu.co.jp/" target="_blank" rel="noreferrer">kintone</a>をデザインするチームでデザインプログラムマネージャーとして活動 </td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
-        <section className={styles.section}>
-          <h3 className={styles.sectionTitle}>発信</h3>
-          <ul className={[styles.sectionBody,styles.snsList].join(" ")}>
-            <li>
-              <a href="https://twitter.com/ka3zu1ma10" target="_blank" rel="noreferrer" className={styles.snsLink}>
-                <img src="/twitter.svg" alt="" />
-                <p className={styles.sectionText}>
-                  Twitter<br aria-hidden="true" />
-                  何気ないことを発信
-                </p>
-                </a>
+          <p className={styles.position}>kintoneをデザインするチームの人材マネージャー</p>
+        </div>
+        <div className={styles.introduction}>
+          <p>kintoneをデザインするチームで、よりチームワークあふれるデザインチームになっていくのを支えることを主軸に活動しています。</p>
+        </div>
+        <section>
+          <ul className={styles.sns_link__list}>
+            <li className={styles.sns_link__list__item}>
+              <a className={styles.twitter} href="https://twitter.com/ka3zu1ma10" target="_blank" rel="noopener noreferrer" aria-label='Twitter'>
+                <img role="image" src="/twitter.svg" aria-hidden="true" />
+              </a>
             </li>
-            <li>
-              <a href="https://note.com/cy_kazuma" target="_blank" rel="noreferrer" className={styles.snsLink}>
-                <img src="/note.svg" alt="" />
-                <p className={styles.sectionText}>
-                  Note<br aria-hidden="true" />
-                  ブログっぽく自分の経験などを発信
-                </p>
+            <li className={styles.sns_link__list__item}>
+              <a className={styles.facebook} href="https://www.facebook.com/ka3zu1ma10" target="_blank" rel="noopener noreferrer" aria-label='Facebook'>
+                <img role="image" src="/facebook.png" aria-hidden="true" />
+              </a>
+            </li>
+            <li className={styles.sns_link__list__item}>
+              <a className={styles.note} href="https://note.com/ka3zu1ma10" target="_blank" rel="noopener noreferrer" aria-label='note'>
+                <img role="image" src="/note.svg" aria-hidden="true" />
               </a>
             </li>
           </ul>
-        </section>
-        <section className={styles.section}>
-          <h3 className={styles.sectionTitle}>連絡</h3>
-          <div className={styles.sectionBody}>
-            <p className={styles.sectionText}>Twitterで気軽にDMしてください</p>
-          </div>
         </section>
       </main>
 
       <footer className={styles.footer}>
       </footer>
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
-      <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&display=swap" rel="stylesheet" />
     </div>
   )
 }

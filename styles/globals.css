@@ -1,12 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&family=Varela+Round&display=swap'); 
+
 html {
   display: flex;
   padding: 0 .5rem;
 }
 
 body {
-  font-family: 'Kiwi Maru', serif;
-  color: rgba(255,255,255,0.8);
-  background-color: #49955E;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  color: #2A2033;
+  background-color: #BAA7CC;
   flex: 1;
 }
 
