@@ -35,40 +35,42 @@ export default function Home() {
         <meta property="og:site_name" content={meta.title} />
         <meta property="og:locale" content="ja_JP"  />
       </Head>
-      <header className={styles.header}>
+      {/* <header className={styles.header}>
         <h1>KazuMax<img src="/mark.svg" alt="" role={'presentation'} className={styles.icon} /></h1>
-      </header>
+      </header> */}
       <main className={styles.main}>
-        <div>
-          <img src="/mark.svg" alt="" role={'presentation'} className={styles.mark} />
-          <div className={styles.name}>
-            <h2 className={styles.nickname}>KazuMax</h2>
-            <p className={styles.fullname}>Kazuma Saito</p>
-          </div>
-          <p className={styles.position}>kintoneをデザインするチームの人材マネージャー</p>
-        </div>
+        <article className={styles.name_card}>
+          <section>
+            <img src="/mark.svg" alt="" role={'presentation'} className={styles.mark} />
+            <div className={styles.name}>
+              <h2 className={styles.nickname}>KazuMax</h2>
+              <p className={styles.fullname}>Kazuma Saito</p>
+            </div>
+            <p className={styles.position}>Design Program Manager</p>
+          </section>
+          <section>
+            <ul className={styles.sns_link__list}>
+              <li className={styles.sns_link__list__item}>
+                <a className={styles.twitter} href="https://twitter.com/ka3zu1ma10" target="_blank" rel="noopener noreferrer" aria-label='Twitter'>
+                  <img role="image" src="/twitter.svg" aria-hidden="true" />
+                </a>
+              </li>
+              <li className={styles.sns_link__list__item}>
+                <a className={styles.facebook} href="https://www.facebook.com/ka3zu1ma10" target="_blank" rel="noopener noreferrer" aria-label='Facebook'>
+                  <img role="image" src="/facebook.png" aria-hidden="true" />
+                </a>
+              </li>
+              <li className={styles.sns_link__list__item}>
+                <a className={styles.note} href="https://note.com/ka3zu1ma10" target="_blank" rel="noopener noreferrer" aria-label='note'>
+                  <img role="image" src="/note.svg" aria-hidden="true" />
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
         <div className={styles.introduction}>
           <p>kintoneをデザインするチームで、よりチームワークあふれるデザインチームになっていくのを支えることを主軸に活動しています。</p>
         </div>
-        <section>
-          <ul className={styles.sns_link__list}>
-            <li className={styles.sns_link__list__item}>
-              <a className={styles.twitter} href="https://twitter.com/ka3zu1ma10" target="_blank" rel="noopener noreferrer" aria-label='Twitter'>
-                <img role="image" src="/twitter.svg" aria-hidden="true" />
-              </a>
-            </li>
-            <li className={styles.sns_link__list__item}>
-              <a className={styles.facebook} href="https://www.facebook.com/ka3zu1ma10" target="_blank" rel="noopener noreferrer" aria-label='Facebook'>
-                <img role="image" src="/facebook.png" aria-hidden="true" />
-              </a>
-            </li>
-            <li className={styles.sns_link__list__item}>
-              <a className={styles.note} href="https://note.com/ka3zu1ma10" target="_blank" rel="noopener noreferrer" aria-label='note'>
-                <img role="image" src="/note.svg" aria-hidden="true" />
-              </a>
-            </li>
-          </ul>
-        </section>
       </main>
 
       <footer className={styles.footer}>
