@@ -7,7 +7,7 @@ export default function Home() {
       <Head>
         <title>Kazuma Saito - Web Product Designer</title>
         <meta name="description" content="Portfolio of Kazuma Saito, Web Product Designer" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
 
       <main className="main">

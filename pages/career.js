@@ -7,7 +7,7 @@ export default function Career() {
       <Head>
         <title>Career - Kazuma Saito</title>
         <meta name="description" content="Career history of Kazuma Saito" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
 
       <main className="main">
