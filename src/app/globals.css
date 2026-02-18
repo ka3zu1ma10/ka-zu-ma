@@ -127,6 +127,19 @@ footer {
   cursor: pointer;
 }
 
+.flip-container:focus {
+  outline: 4px solid rgba(51, 102, 51, 0.5);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+/* Ensure links inside the card are clickable and have focus styles */
+.card a:focus {
+  outline: 2px solid var(--primary-green);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
 .flipper {
   transition: 0.6s;
   transform-style: preserve-3d;
@@ -182,7 +195,23 @@ footer {
     /* Let container dictate height */
     aspect-ratio: auto;
     /* Container handles this */
-    position: absolute;
     /* Re-affirm absolute */
   }
+}
+
+/* Page Transition */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.page-transition {
+  animation: fadeIn 0.4s ease-out forwards;
 }

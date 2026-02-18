@@ -38,9 +38,26 @@ export default function Experience() {
             <span style={{ fontSize: '1.2rem', color: 'var(--primary-green)', fontWeight: 700, display: 'block', marginBottom: '0.2rem' }}>2024.09 - Present</span>
             <div style={{ fontSize: '1rem', fontWeight: 600, color: '#1a1a1a', marginBottom: '0.5rem' }}>Cybozu Inc.</div>
             <h3 style={{ fontSize: '1rem', fontWeight: 500, color: 'var(--text-secondary)', marginBottom: '0.5rem' }}>プロダクトデザイナー (kintone)</h3>
-            <p style={{ fontSize: '0.95rem', lineHeight: '1.6' }}>
+            <p style={{ fontSize: '0.95rem', lineHeight: '1.6', marginBottom: '0.8rem' }}>
               kintoneの開発におけるプロダクトデザイン（UX/UI）全般を担当。
             </p>
+            {/* Tech Stack */}
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px', marginBottom: '0.8rem' }}>
+              {['Figma', 'React', 'TypeScript', 'SCSS', 'A11y'].map(tech => (
+                <span key={tech} style={{ fontSize: '0.75rem', padding: '2px 8px', borderRadius: '4px', backgroundColor: '#f3f4f6', color: '#555' }}>{tech}</span>
+              ))}
+            </div>
+            {/* Achievements */}
+            <ul style={{ listStyle: 'none', padding: 0, fontSize: '0.9rem', color: '#444' }}>
+              <li style={{ marginBottom: '4px', display: 'flex', alignItems: 'start' }}>
+                <span style={{ marginRight: '8px', color: 'var(--primary-green)' }}>✓</span>
+                Design system components update for better accessibility.
+              </li>
+              <li style={{ marginBottom: '4px', display: 'flex', alignItems: 'start' }}>
+                <span style={{ marginRight: '8px', color: 'var(--primary-green)' }}>✓</span>
+                Led the UI modernization project for core app features.
+              </li>
+            </ul>
           </div>
 
           {/* Role 2 */}
@@ -58,9 +75,26 @@ export default function Experience() {
             <span style={{ fontSize: '1.1rem', color: '#1a1a1a', fontWeight: 600, display: 'block', marginBottom: '0.2rem' }}>2021.01 - 2024.08</span>
             <div style={{ fontSize: '1rem', fontWeight: 600, color: '#1a1a1a', marginBottom: '0.5rem' }}>Cybozu Inc.</div>
             <h3 style={{ fontSize: '1rem', fontWeight: 500, color: 'var(--text-secondary)', marginBottom: '0.5rem' }}>デザインプログラムマネージャー (DPM)</h3>
-            <p style={{ fontSize: '0.95rem', lineHeight: '1.6' }}>
+            <p style={{ fontSize: '0.95rem', lineHeight: '1.6', marginBottom: '0.8rem' }}>
               デザイン組織の採用戦略立案・実行、広報、チームビルディングの推進。
             </p>
+            {/* Tech Stack */}
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px', marginBottom: '0.8rem' }}>
+              {['Notion', 'Miro', 'Figma', 'HR Management'].map(tech => (
+                <span key={tech} style={{ fontSize: '0.75rem', padding: '2px 8px', borderRadius: '4px', backgroundColor: '#f3f4f6', color: '#555' }}>{tech}</span>
+              ))}
+            </div>
+            {/* Achievements */}
+            <ul style={{ listStyle: 'none', padding: 0, fontSize: '0.9rem', color: '#444' }}>
+              <li style={{ marginBottom: '4px', display: 'flex', alignItems: 'start' }}>
+                <span style={{ marginRight: '8px', color: 'var(--primary-green)' }}>✓</span>
+                Designed and executed hiring strategies, increasing team size by 150%.
+              </li>
+              <li style={{ marginBottom: '4px', display: 'flex', alignItems: 'start' }}>
+                <span style={{ marginRight: '8px', color: 'var(--primary-green)' }}>✓</span>
+                Organized &quot;Cybozu Design Conference&quot; to boost employer branding.
+              </li>
+            </ul>
           </div>
 
           {/* Role 3 */}
@@ -78,9 +112,25 @@ export default function Experience() {
             <span style={{ fontSize: '1.1rem', color: '#1a1a1a', fontWeight: 600, display: 'block', marginBottom: '0.2rem' }}>2017.04 - 2020.12</span>
             <div style={{ fontSize: '1rem', fontWeight: 600, color: '#1a1a1a', marginBottom: '0.5rem' }}>Cybozu Inc.</div>
             <h3 style={{ fontSize: '1rem', fontWeight: 500, color: 'var(--text-secondary)', marginBottom: '0.5rem' }}>プロダクトデザイナー / フロントエンドエンジニア</h3>
-            <ul style={{ listStyleType: 'disc', paddingLeft: '1.2rem', marginTop: '0.5rem', fontSize: '0.95rem', lineHeight: '1.6' }}>
-              <li>「サイボウズ Office」の改善企画、ユーザーリサーチ、アクセシビリティ向上。</li>
-              <li>Vue.jsを用いたフロントエンド刷新の実装および、デザイン組織の採用広報活動。</li>
+            <p style={{ fontSize: '0.95rem', lineHeight: '1.6', marginBottom: '0.8rem' }}>
+              「サイボウズ Office」の改善企画、ユーザーリサーチ、アクセシビリティ向上、実装。
+            </p>
+            {/* Tech Stack */}
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px', marginBottom: '0.8rem' }}>
+              {['Vue.js', 'Sass', 'PHP', 'jQuery', 'Figma'].map(tech => (
+                <span key={tech} style={{ fontSize: '0.75rem', padding: '2px 8px', borderRadius: '4px', backgroundColor: '#f3f4f6', color: '#555' }}>{tech}</span>
+              ))}
+            </div>
+            {/* Achievements */}
+            <ul style={{ listStyle: 'none', padding: 0, fontSize: '0.9rem', color: '#444' }}>
+              <li style={{ marginBottom: '4px', display: 'flex', alignItems: 'start' }}>
+                <span style={{ marginRight: '8px', color: 'var(--primary-green)' }}>✓</span>
+                Refactored legacy jQuery codebase to Vue.js, improving performance.
+              </li>
+              <li style={{ marginBottom: '4px', display: 'flex', alignItems: 'start' }}>
+                <span style={{ marginRight: '8px', color: 'var(--primary-green)' }}>✓</span>
+                Conducted user research to identify pain points in mobile usage.
+              </li>
             </ul>
           </div>
         </div>
